@@ -5,12 +5,54 @@
 		<title>卒業研究課題　CSSアニメーション</title>
 		<style>
 			/*CSSのエリア*/
-			body {
-  background-color: #eaf6fd;
+body {
+	background-color:#2e3233;
+	color:#c2c4cc;
+	font-family:"Hiragino maru Gothic ProN W4", "Hiragino Kaku Gothic Pro","Hiragino Sans", "arial", "Meiryo", "MS PGothic", sans-serif!important;
+			}
+/*ボタンの初期設定*/
+.btn{
+    display: inline-block;
+    border: 3px double white;
+	width:200px;
+	height:30px;
+	padding: 30px 10px;
+    color:  white;
+    text-decoration: none;
+				
+	transition: all 0.7s ease-out;
+				
+	}
+/*ボタン１*/
+.btn1{
+    background: linear-gradient(270deg, rgba(137,247,254,0.8), rgba(102,166,255,0.8), rgba(0,0,0,0), rgba(0,0,0,0));
+    background-size: 300% 300%;
+    background-position: 1% 50%;
+	border: 3px double white;
+}
+/*ボタン２*/
+.btn2{
+    background: linear-gradient(270deg, rgba(250,112,154,0.8), rgba(254,225,64,0.8), rgba(0,0,0,0), rgba(0,0,0,0));
+    background-size: 300% 300%;
+    background-position: 1% 50%;
+	border: 3px double white;
+}	
+/*ボタン３*/
+.btn3{
+    background: linear-gradient(270deg, rgba(212,252,121,0.8), rgba(150,230,161,0.8), rgba(0,0,0,0), rgba(0,0,0,0));
+    background-size: 300% 300%;
+    background-position: 1% 50%;
+	border: 3px double white;
+}							
+/*マウスが乗った時*/			
+.btn:hover{
+    color: white;
+    border: 3px double white;
+    background-position: 99% 50%;
 }
 			
-body{font-family:"Hiragino maru Gothic ProN W4", "Hiragino Kaku Gothic Pro","Hiragino Sans", "arial", "Meiryo", "MS PGothic", sans-serif!important;}
-		</style>
+			
+	</style>
 	</head>
 	<body>
 		<div style="text-align: center">
@@ -18,15 +60,16 @@ body{font-family:"Hiragino maru Gothic ProN W4", "Hiragino Kaku Gothic Pro","Hir
 		<h1>卒業研究課題</h1>
 		    CSS アニメーション
 		　　　　学籍番号　1901010244
+			<br>
+			<br>
+		<a href="" class="btn btn1">スライド</a>
+		<a href="" class="btn btn2">アニメーション</a>
+		<a href="" class="btn btn3">あとがき</a>
+			<br><br>
+		<a href="" class="btn btn2">めまい</a>
+		<a href="" class="btn btn3">サンプル</a>
+		<a href="" class="btn btn1">参考サイト</a>
 		</div>
-		<table border ="1">
-			<tr>
-				<td rowspan ="2">A</td> <td>B</td> <td>C</td>
-			</tr>
-			<tr>
-				<td colspan ="2">D</td>
-			</tr>
-		</table>
-		<!-- コンテンツのエリア -->
+		
 	</body>
 </html>
