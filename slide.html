@@ -5,6 +5,30 @@
 		<title>発表したスライド</title>
 		<style>
 /*CSSのエリア*/
+.boxmessage{
+    margin:2em 0;
+    position: relative;
+    padding: 0.5em 1.5em;
+    border-top: solid 2px black;
+    border-bottom: solid 2px black;
+}
+.boxmessage:before, .boxmessage:after{
+    content: '';
+    position: absolute;
+    top: -10px;
+    width: 2px;
+    height: -webkit-calc(100% + 20px);
+    height: calc(100% + 20px);
+    background-color: black;
+}
+.boxmessage:before {left: 10px;}
+.boxmessage:after {right: 10px;}
+.boxmessage p {
+    margin: 0; 
+    padding: 0;
+	text-align: center;
+}
+
 		
 body {
 	background:linear-gradient(#a8edea, #fed6e3);
@@ -55,6 +79,9 @@ body {
 		<div style="text-align: center">
 		<img src="images/image01.png">
 		</div>
+		<div class="boxmessage">
+			<p>このページは、卒業研究課題で発表したスライドとスライドの説明文を掲載しています。<br>誤字脱字が多数あります。<br>ご了承ください。<br>m(__)m</p>
+</div>
 		<div class="bl_vertTable">
 			<table>
 				<thead>
