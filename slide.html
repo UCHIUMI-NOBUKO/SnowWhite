@@ -8,70 +8,173 @@
 		
 body {
 	background:linear-gradient(#a8edea, #fed6e3);
-	color:#c2c4cc;
+	color:#000000;
 	font-family:"Hiragino maru Gothic ProN W4", "Hiragino Kaku Gothic Pro","Hiragino Sans", "arial", "Meiryo", "MS PGothic", sans-serif!important;
 			}
-		</style>
+.bl_vertTable {
+	border:1px solid #ddd;
+			}
+.bl_vertTable table{
+	width: 100%;
+	table-layout;fixed;
+			}
+.bl_vertTable thead tr{
+	background-color:#00a497;
+			}
+.bl_vertTable th{
+	padding:15px;
+	border-right:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	vertical-align:middle;
+			}
+.bl_vertTable td{
+	padding:15px;
+	border-right:1px solid #ddd;
+	border-bottom:1px solid #ddd;
+	vertical-align:middle;
+			}
+.bl_vertTable th:last-child,
+.bl_vertTable td:last-child	{
+	border-right-width:0;
+			}
+.bl_vertTable tbody tr:last-child 
+	td{
+	border-bottom-width:0;
+			}
+</style>
 	</head>
 	<body>
 		<div style="text-align: center">
 		<img src="images/image01.png">
 		</div>
-		<table>
-			<tr>
-			<th>スライド</th>
-			<th>説明</th>
-			</tr>
-			<tr>
-			<td><img src="slideimage/slide1.png"></td>
-			<td>ゼミナール中島<br>
-				卒業研究課題<br>
-				Cssアニメーション<br>
-				よろしくお願いします。</td>
-			</tr>
-			<tr>
-			<td><img src="slideimage/slide2.png"></td>
-			<td>今回の内容です。
-				スライドに示す、5つ<br>
-				1つ目、cssでアニメーションを作る2つの方法について<br>
-				2つ目、css　アニメーションとは何か？<br>
-				3つ目、アニメーションの開始から終了まで、どのように変化させるかを指定するキーフレイムの設定、記述方法。<br>
-				4つ目、アニメーションの細かい動きを指定するアニメーションプロパティの意味と設定、記述方法。<br>
-				最後、5つ目、アニメーションを上手に使うためのポイントをお話させていただきます。</td>
-			</tr>
-			<tr>
-			<td><img src="slideimage/slide3.png"></td>
-			<td>まず、cssでアニメーションを作る2つの方法についてですが、
-						cssでアニメーションを作る方法は、CSSトランジッションとCSSアニメーションの2つがあります。<br>
-トランジッションは、何か、きっかけを与えることで動作するアニメーションで、例えば、ページ上にメニューと書かれている部分にマウスを持っていくと、詳細なメニュー画面が滑り出てくるようなアニメーションを言います。<br>
-						それに対し、アニメーションは、ページを開いた瞬間から動作するもので、アニメーションの開始から終了まで、どのように変化させるかを指定するキーフレイムを適用し、アニメーションプロパティで細かい動きを設定したアニメーションを実装したものをいいます。</td>
-			</tr>
-		</table>
-		<img src="slideimage/slide4.png"><br>
-		<img src="slideimage/slide5.png"><br>
-		<img src="slideimage/slide6.png"><br>
-		<img src="slideimage/slide7.png"><br>
-		<img src="slideimage/slide8.png"><br>
-		<img src="slideimage/slide9.png"><br>
-		<img src="slideimage/slide10.png"><br>
-		<img src="slideimage/slide11.png"><br>
-		<img src="slideimage/slide12.png"><br>
-		<img src="slideimage/slide13.png"><br>
-		<img src="slideimage/slide21.png"><br>
-		<img src="slideimage/slide22.png"><br>
-		<img src="slideimage/slide23.png"><br>
-		<img src="slideimage/slide24.png"><br>
-		<img src="slideimage/slide25.png"><br>
-		<img src="slideimage/slide26.png"><br>
-		<img src="slideimage/slide27.png"><br>
-		<img src="slideimage/slide28.png"><br>
-		<img src="slideimage/slide29.png"><br>
-		<img src="slideimage/slide30.png"><br>
-		<img src="slideimage/slide31.png"><br>
-		<img src="slideimage/slide32.png"><br>
-		<img src="slideimage/slide33.png"><br>
-		<img src="slideimage/slide34.png"><br>
-		<img src="slideimage/slide35.png"><br>
-		
+		<div class="bl_vertTable">
+			<table>
+				<thead>
+				<tr>
+					<th>スライド</th>
+					<th>説明文</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td><img src="slideimage/slide1.png"></td>
+					<td>ゼミナール中島<br>卒業研究課題<br>Cssアニメーション<br>願いします。</td>
+				</tr>
+				<tr>
+					<td><img src="slideimage/slide2.png"></td>
+					<td>今回の内容です。
+				スライドに示す、5つ<br>1つ目、cssでアニメーションを作る2つの方法について<br>2つ目、css　アニメーションとは何か？<br>3つ目、アニメーションの開始から終了まで、どのように変化させるかを指定するキーフレイムの設定、記述方法。<br>4つ目、アニメーションの細かい動きを指定するアニメーションプロパティの意味と設定、記述方法。<br>最後、5つ目、アニメーションを上手に使うためのポイントをお話させていただきます。</td>
+				</tr>
+				<tr>
+					<td><img src="slideimage/slide3.png"></td>
+					<td>まず、cssでアニメーションを作る2つの方法についてですが、cssでアニメーションを作る方法は、CSSトランジッションとCSSアニメーションの2つがあります。<br>トランジッションは、何か、きっかけを与えることで動作するアニメーションで、例えば、ページ上にメニューと書かれている部分にマウスを持っていくと、詳細なメニュー画面が滑り出てくるようなアニメーションを言います。<br>それに対し、アニメーションは、ページを開いた瞬間から動作するもので、アニメーションの開始から終了まで、どのように変化させるかを指定するキーフレイムを適用し、アニメーションプロパティで細かい動きを設定したアニメーションを実装したものをいいます。</td>
+				</tr>
+				<tr>
+					<td><img src="slideimage/slide4.png"></td>
+					<td>今回は、このアニメーションについて詳しく説明する内容となっています。</td>
+				</tr>
+				<tr>
+					<td><img src="slideimage/slide5.png"></td>
+					<td>このcssアニメーションとは、cssのスタイルを別の設定に変化させることをいいます。<br>例えば、要素を回転させたり、伸縮、拡張させたり、色を変えたり、透過させたり移動させたり・・・などなど<br>
+これを実行させるためには２種類の要素を構成する必要があり、1つ目が、アニメーションのはじめと終わりのスタイルを設定するキーフレイムというもの。<br>もちろん、はじめと終わりだけではなく、途中の通過ごとにスタイルを変更させることも出来ます。<br>もう一つが、キーフレームで設定したアニメーションについて詳細な設定を記述するスタイルです。
+<br>この2つが揃ってCssアニメーションは表現できることとなります。</td>
+				</tr>
+				<tr>
+					<td><img src="slideimage/slide6.png"></td>
+					<td>この2つの要素はどこに記述するのか？<br>Css二メーションと言うくらいですので、ヘッド内のスタイルタグの中ピンクの矢印で示した部分に記述します。</td>
+				</tr>
+				<tr>
+					<td><img src="slideimage/slide7.png"></td>
+					<td>どこに記述するか？わかったところで、次はキーフレームの設定についてです。<br>何度も出てきている言葉ですが、キーフレームとは、アニメーション開始から終了までどのような動きや変化をするか？を指定します。<br>大変大まかな設定です・・・。<br><br>このキーフレームは＠規則ですので、＠キーフレームから書き出し、波かっこの中に設定を記述します。</td>
+				</tr>
+				<tr>
+					<td><img src="slideimage/slide8.png"></td>
+					<td>＠キーフレームのすぐ後には、このアニメーションの名前を書きます。<br>任意の名前でのちに説明するアニメーションプロパティと紐付けするための名前です。</td>
+				</tr>
+				<tr>
+					<td><img src="slideimage/slide9.png"></td>
+					<td>Cssプロパティ　コロン　値　セミコロン　では、色、背景色、横幅、高さなどのプロパティを記述し、値を変化させることで、拡大や縮小、透明や不透明など様々なアニメーションを指定します。<td>
+				</tr>
+				<tr>
+					<td><img src="slideimage/slide10.png"></td>
+							<td>最後に、０％、１００％の部分ですが、これは０％はアニメーションの開始時のスタイルです。<br>０％と書く代わりに、fromと書くこともあります。<br>１００％はアニメーションの終了時のスタイルです。<br>１００％と書く代わりに、toと書く場合もあります。<br><br>また、０〜１００％の間であれば、２５％、５０％、７５％など任意にポイントを追加できます。</td>
+				</tr>
+				<tr>
+					<td><img src="slideimage/slide11.png"></td>
+					<td>これでキーフレームの設定は記述完了です。<br>しかし、これだけでは、アニメーションは動きません。<br>開始から終了までのアニメーションを指定しただけにすぎません。<br><br>どの、アニメーションに適応するのか？<br>適応したアニメーションはいつ開始されるのか？<br>開始されてから終了するまでの時間は？<br>繰り返しはするの？1回だけ？それとも、何回も繰り返すのか？<br>これらを設定するためには、アニメーションのプロパティを設定する必要があります。<br><br>次からアニメーションのプロパティについて説明します。
+				</tr>
+				<tr>
+					<td><img src="slideimage/slide12.png"></td>
+					<td>アニメーションのプロイパティの設定を記述するには２通りの方法があります。<br>①1つ1つのプロパティを記述する方法。<br>②アニメーションと言う複数のプロパティの値をまとめて指定するプロパティで記述する方法。<br>です。</td>
+				</tr>
+				<tr>
+					<td><img src="slideimage/slide13.png"></td>
+					<td>②の複数のプロパティの値をまとめて指定するプロパティの中身は、①で1つ1つ設定したプリパティの値のみを記述します。<br>①でアニメーションネームの値をローテーションと記述した場合、②では、その値のローテーションのみを記述します。</td>
+				</tr>
+				<tr>
+					<td><img src="slideimage/slide21.png"></td>
+					<td>②の中では今まで説明した通りの順番で記述しなければならないわけではなく、順不同で記述可能です。<br>しかし、いくつかルールがあります。<br>アニメーションとして再生させるために、アニメーションネームとアニメーションデュレーションの2つは指定すること。<br>アニメーションネームの値が他のアニメーション・タイミング・ファンクションやアニメーション・ディレクションなどの値と同じにしないこと。<br>また、animation-durationとanimation-delayのプロパティは両方とも秒数で指定するため、最初に記述した秒数がanimation-durationで、次に記述した秒数がanimation-delayと解釈されることです。</td>
+				</tr>
+				<tr>
+					<td><img src="slideimage/slide22.png"></td>
+					<td>ここからプロパティの1つ1つを見ていきます。<br><br>最初はアニメーションネームです。<br>アニメーションの名前を指定します。<br>キーフレームで設定した名前を指定すると、キーフレームで設定した流れでアニメーションが動きます。<br>任意の文字字列で指定できますが、他のプロパティと同じ名前にはしないことが重要です。</td>
+				</tr>
+				<tr>
+					<td><img src="slideimage/slide23.png"></td>
+					<td>アニメーション・デュレーションは、アニメーションの開始から終了までの所要時間を指定します。<br>初期値が、０sで、s（秒）またはms（ミリ秒）で指定します。<br>2sであれば、2秒間で1回アニメーションを実行。<br>10sであれば、10秒間で1回のアニメーションを実行。<br>2msであれば2ミリ秒間で1回アニメーションを実行。となります。<br>つまり、ここで設定した秒数=キーフレイムで設定される100％ということです。</td>
+				</tr>
+				<tr>
+					<td><img src="slideimage/slide24.png"></td>
+					<td>アニメーション・タイミング・ファンクションは、アニメーションのイージング（速度の緩急ゆっくり始めるとか、終わりはゆっくりなど、）を指定します。<br><br>値は９個あり、初期値はイーズで、開始と終了は緩やかに変化します。<br><br>イーズイン・・・開始時、緩やかで、終了に近づくと早く変化する <br>イーズアウト・・・開始時、早く変化し、終了に近づくと緩やかに変化しする。<br>イーズインアウト・・・開始と終了は緩やかに変化。<br>リニア・・・開始から終了まで一定に変化する<br>ステップスタート・・・開始時に最終状態になる<br>ステップエンド・・・終了時に最終状態になる<br>ステップス・・・第1引数に指定した正数の段階で変化する。第2引数には start または end を指定する。start を指定すると、アニメーション開始時から変化する。　end を指定すると、アニメーション終了時に変化する。<br>キュービック・ベジェ という、３次ベジェ曲線で指定する方法もあります。</td>
+				</tr>
+				<tr>
+					<td><img src="slideimage/slide25.png"></td>
+					<td>アニメーション・ディレイは、アニメーションが開始する時間を指定します。<br>アニメーション・デュレーションのように、初期値が、０sで、s（秒）、またはms（ミリ秒）で指定します。<br>2sであれば、2秒後にアニメーションを実行。<br>10sであれば、10後にアニメーションを実行。<br>2msであれば2ミリ秒後にアニメーションを実行。<br>となります。</td>
+				</tr>
+				<tr>
+					<td><img src="slideimage/slide26.png"></td>
+								<td>アニメーション・イテレーション・カウントは、アニメーションの繰り返す回数を指定します。<br>初期値は１つまり1回のみの設定で、無限に繰り返したい場合は、インフィニット（無限）を指定します。</td>
+							</tr>
+							<tr>
+								<td><img src="slideimage/slide27.png"></td>
+								<td>アニメーション・ディレクションは、アニメーションの再生方向を指定します。<br>値は4つあり、初期値はノーマルで、順方向にアニメーションが再生されます。<br>他に、リバースは、逆方向のアニメーションが再生される。<br>オルタネットは、順方向と、逆方向のアニメーションを交互に繰り返して、再生される。<br>オルタネットリバースは、逆方向と順方向のアニメーションを交互に繰り返して再生されます。<br><br>順方向と逆方向について、補足ですが、開始０％から終了１００％に向かうのが順方向で、
+終了１００％から開始０％向かうのが逆方向となります。
+</td>
+							</tr>
+							<tr>
+								<td><img src="slideimage/slide28.png"></td>
+								<td>アニメーション・フィル・モードは、アニメーション開始開始前と、開始後のスタイルを指定します。<br>値は4つあり、初期値はノンで、アニメーションで指定したスタイルはアニメションの開始前と終了後には適応されません。<br>他に、フォワード・・・アニメーション終了時のスタイルが終了後にも適応される。<br>バックワーズ・・・アニメーション開始時のスタイルが開始前にも適応される。<br>ボウズ・・・フォワードとバックワーズの両方が適応されるです。</td>
+							</tr>
+							<tr>
+								<td><img src="slideimage/slide29.png"></td>
+								<td>最初のスタイルが黒い四角だとします。<br>アニメーションで背景色を赤から青へ変化させるとすると、ノンとフォワードはアニメーションで指定した開始時のアニメーションが開始前には適応されないので、黒いままで開始すると、赤に変わります。<br>また、終了時にはいずれも青になりますが、のんの場合は、終了後にアニメーションの終了時のスタイルが適応されないので黒に戻り、フォワードは適応されるので青いままとなります。<br>バックワードと、ボウズは開始前のスタイルに、開始時のスタイルが適応されるので赤となり、終了後はバックワードは終了時のスタイルが適応されないので黒に戻ります。<br>ボウズはそのまま適応されるので青いままとなります。</td>
+							</tr>
+							<tr>
+								<td><img src="slideimage/slide30.png"></td>
+								<td>アニメーション・プレイ・ステートは、アニメーションの再生と停止を指定します。<br>初期値はランニングで、アニメーションが実行され、もう一つは、ポーズでアニメーションが停止します。
+								<br<ポーズで停止したアニメーションはランニングでランニングで再度再生させると、停止した時点からのアニメーションが再開されます。<br><br>以上、8つのプロパティでアニメーションの詳細を決定します。</td>
+							</tr>
+							<tr>
+								<td><img src="slideimage/slide31.png"></td>
+								<td>実際にアニメーションを使う際には、アクセシビリティの４原則を念頭に、華やかさだけを求めたアニメーションで表現することは好ましくなくWebサイトを利用するすべての人が年齢・身体的制約、などに関係なくコンテンツが利用できるできるデザインを考える必要があります。</td>
+							</tr>
+							<tr>
+								<td><img src="slideimage/slide32.png"></td>
+								<td>点滅を伴うアニメーションや、特定の種類の動きに対して、ないかしらの不調を訴えることもあります。<br>そのような場合には、アニメーションを停止したり、無効にしたりする仕組みリデュース・モーション・メディア・クエリを使用します。</td>
+							</tr>
+							<tr>
+								<td><img src="slideimage/slide33.png"></td>
+								<td>最後に、cssでアニメーションを利用する利点ですが、以前は、JavaScriptでアニメーションは作られていましたが、今では、JavaScriptを知らなくても、cssがわかれば手軽に作製できるようになっています。<br>また、中程度以下のシステム負荷で良く動作し、ブラウザーがアニメーションの流れを制御し、パフォーマンスや効率を最適化もしてくれます。<br>さらに、複雑なUIを構築した時、制御をJavaScriptに、アニメーションをCSSに分離して記述することで、それぞれの管理が容易になります。</td>
+							</tr>
+							<tr>
+								<td><img src="slideimage/slide34.png"></td>
+								<td>まとめです。<br>CSSでアニメーションを作る2つの方法<br>CSS Animationとは何か？<br>Keyframesの設定・記述記述<br>Animationプロパティの意味と設定・記述方法<br>アニメーションを上手に使うためにをお話しさせていただきました。<br><br>ありがとぉございました。</td>
+							</tr>
+							<tr>
+								<td><img src="slideimage/slide35.png"></td>
+								<td>参考文献はこちらになります。</td>
+							</tr>
+			</table>
+		</div>
 	</body>
 </html>
