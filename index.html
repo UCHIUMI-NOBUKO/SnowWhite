@@ -5,6 +5,32 @@
 		<title>卒業研究課題　CSSアニメーション</title>
 		<style>
 			/*CSSのエリア*/
+* {
+  margin:0; padding:0;
+}
+			
+header {
+  width: 100%;
+  padding: 15px 0;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #5c6466;
+  color: #000000;
+}
+header .headline{
+  font-size: 32px;
+}
+.nav-list {
+  text-align: center;
+  padding: 10px 0;
+  margin: 0 auto;
+}
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+}
+			
 body {
 	background-color:#2e3233;
 	color:#c2c4cc;
@@ -59,6 +85,23 @@ p {
 	</style>
 	</head>
 	<body>
+		<header>
+    <h1 class="headline">
+  卒業研究課題
+  </h1>
+  <ul class="nav-list">
+    <li class="nav-list-item">
+      <a>Home</a>
+    </li>
+				<a href ="index.html"><li class="nav-list-item">最初のページ</li></a>
+				<a href ="slide.html"><li class="nav-list-item">発表スライド</li></a>
+				<a href="myanima/html"><li class="nav-list-item">自作アニメーション</a>
+				<a href="rmmq.html"><li class="nav-list-item">Reduced Motion Media Query</li></a>
+				<a href="sankou.html"><li class="nav-list-item">参考サイト</li></a>
+				<a href="atogaki.html"><li class="nav-list-item">あとがき</li></a>
+  </ul>
+	</header>
+		
 		<div style="text-align: center">
 		<img src="images/image00.png">
 		<h1>卒業研究課題</h1>
@@ -68,11 +111,11 @@ p {
 			<br>
 		<a href="slide.html" class="btn btn1">発表スライド</a>
 		<a href="myanime.html" class="btn btn2">自作アニメーション</a>
-		<a href="" class="btn btn3">あとがき</a>
+		<a href="rmmg.html" class="btn btn3">Reduced Motion Media Query</a>
 			<br><br>
-		<a href="" class="btn btn2">めまい</a>
-		<a href="" class="btn btn3">サンプル</a>
-		<a href="" class="btn btn1">参考サイト</a>
+		<a href="sankou.html" class="btn btn2">参考サイト</a>
+		<a href="atogaki.html" class="btn btn3">あとがき</a>
+		<a href="aboutme.html" class="btn btn1">About me...</a>
 		</div>
 		
 		<p>上記のボタンには【transition】を使用しています。</p>
