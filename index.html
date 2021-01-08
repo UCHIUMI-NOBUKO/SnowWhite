@@ -79,9 +79,23 @@ p {
     color: white;
     border: 3px double white;
     background-position: 99% 50%;
+}			
+/*TOP_PAGEの画像変換*/
+.toppage {
+    background: url("images/top.png") no-repeat;
 }
-			
-			
+ 
+.toppage a {
+    display: inline-block;
+}
+ 
+.toppage a:hover {
+	background-color: transparent;
+}
+ 
+.toppage a:hover img {
+    visibility: hidden;
+}			
 	</style>
 	</head>
 	<body>
@@ -90,7 +104,7 @@ p {
   卒業研究課題
   </h1>
   
-			<a href ="index.html"><li class="nav-list-item"><img src="images/top.png"></li></a>
+			<DIV class="toppage"><a href ="index.html"><li class="nav-list-item"><img src="images/top.png"></li></a></DIV>
 			<a href ="slide.html"><li class="nav-list-item"><img src="images/slide.png"></li></a>
 			<a href ="myanime.html"><li class="nav-list-item"><img src="images/anime.png"></li></a>
 			<a href ="rmmq.html"><li class="nav-list-item"><img src="images/debate.png"></li></a>
