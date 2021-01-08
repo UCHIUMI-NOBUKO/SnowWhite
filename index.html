@@ -81,21 +81,21 @@ p {
     background-position: 99% 50%;
 }			
 /*TOP_PAGEの画像変換*/
-.toppage {
-    background: url("images/top1.png") no-repeat;
+.img_wrap{
+  width: 154px;
+  height: 62px;
+  margin: 20px auto 0;
+  transition-duration: 0.5s;
 }
- 
-.toppage a {
-    display: inline-block;
+.img_wrap img{
+  width: 100%;
+  cursor: pointer;
 }
- 
-.toppage a:hover {
-	background-color: transparent;
+.img_wrap:hover{
+  box-shadow: 10px 10px 10px rgba(0,0,0,0.5);
+  transform: translateY(-10px);
+  transition-duration: 0.5s;
 }
- 
-.toppage a:hover img {
-    visibility: hidden;
-}			
 	</style>
 	</head>
 	<body>
@@ -104,7 +104,7 @@ p {
   卒業研究課題
   </h1>
   
-			<li class="nav-list-item"><DIV class="toppage"><a href ="index.html"><img src="images/top.png"></a></DIV></li>
+			<div class="img_wrap"><a href ="index.html"><li class="nav-list-item"><img src="images/top.png"></li></a><div>
 			<a href ="slide.html"><li class="nav-list-item"><img src="images/slide.png"></li></a>
 			<a href ="myanime.html"><li class="nav-list-item"><img src="images/anime.png"></li></a>
 			<a href ="rmmq.html"><li class="nav-list-item"><img src="images/debate.png"></li></a>
