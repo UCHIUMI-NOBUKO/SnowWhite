@@ -1,61 +1,109 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="utf-8">
-		<title>Reduced Motion Media Query</title>
+		<title>ディベートのまとめ</title>
 		<style>
 /*CSSのエリア*/
 * {
   margin:0; padding:0;
 }
-			
+/*ヘッダーの設定*/			
 header {
   width: 100%;
   padding: 15px 0;
   margin: 0 auto;
   text-align: center;
   background-color: #332f2e;
-  color: #000000;
+  color: #FFFFFF;
 }
 header .headline{
   font-size: 32px;
 }
 .nav-list {
   text-align: center;
-  padding: 10px 0;
+  padding: 5px 0;
   margin: 0 auto;
 }
 .nav-list-item {
   list-style: none;
   display: inline-block;
-  margin: 0 20px;
+  margin: 0 5px;
 }
-			
+/*bodyのスタイル*/
 body {
-	background-color:#2e3233;
-	color:#c2c4cc;
+	background-color:#2e3233;		
+	color:#FFFFFF;
 	font-family:"Hiragino maru Gothic ProN W4", "Hiragino Kaku Gothic Pro","Hiragino Sans", "arial", "Meiryo", "MS PGothic", sans-serif!important;
 			}
+
+/*説明文のBOX*/
+.box{
+    position: relative;
+    background: #99eeff;
+    box-shadow: 0px 0px 0px 6px #99eeff;
+    border: dashed 4px #00d5ff;
+    padding: 0.2em 0.5em;
+	margin: 0 auto;
+    color: black;
+	width: 800px;
+}
+.box:after{
+    position: absolute;
+    content: '';
+    right: -10px;
+    top: -10px;
+    border-width: 0 17px 17px 0;
+    border-style: solid;
+    border-color: #ffdb88 #2e3233 #ffdb88;
+    box-shadow: -1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.box p {
+    margin: 0; 
+    padding: 3px;
+}
+
+/*ヘッダーのアイコン移動*/
+.img_wrap{
+  width: 154px;
+  height: 62px;
+  margin: 15px auto 0;
+  transition-duration: 0.5s;
+}
+.img_wrap img{
+  width: 100%;
+  cursor: pointer;
+}
+.img_wrap:hover{
+  box-shadow: 10px 10px 10px rgba(255,255,255,0.5);
+  transform: translateY(-10px);
+  transition-duration: 0.5s;
+}
 </style>
-	</head>
+</head>
+	
 	<body>
-<header>
-  <h1 class="headline">
-  卒業研究課題
-  </h1>
-  <ul class="nav-list">
-    <li class="nav-list-item">
-    </li>
-				<a href ="index.html"><li class="nav-list-item">最初のページ</li></a>
-				<a href ="slide.html"><li class="nav-list-item">発表スライド</li></a>
-				<a href="myanima/html"><li class="nav-list-item">自作アニメーション<</li>/a>
-				<a href="rmmq.html"><li class="nav-list-item">Reduced Motion Media Query</li></a>
-				<a href="sankou.html"><li class="nav-list-item">参考サイト</li></a>
-				<a href="atogaki.html"><li class="nav-list-item">あとがき</li></a>
-  </ul>
+	<header>
+    <h1 class="headline">卒業研究課題</h1>
+			<a href ="index.html"><li class="nav-list-item"><div class="img_wrap"><img src="images/top.png"></div></li></a>
+			<a href ="slide.html"><li class="nav-list-item"><div class="img_wrap"><img src="images/slide.png"></div></li></a>
+			<a href ="myanime.html"><li class="nav-list-item"><div class="img_wrap"><img src="images/anime.png"></div></li></a>
+			<a href ="rmmq.html"><li class="nav-list-item"><div class="img_wrap"><img src="images/debate.png"></div></li></a>
+			<a href ="sankou.html"><li class="nav-list-item"><div class="img_wrap"><img src="images/sankou.png"></div></li></a>
+			<a href ="atogaki.html"><li class="nav-list-item"><div class="img_wrap"><img src="images/atogaki.png"></div></li></a>
+			<a href ="aboutme.html"><li class="nav-list-item"><div class="img_wrap"><img src="images/aboutme.png"></div></li></a>
 	</header>
-
-工事中・・・
-
-</body>
-</html>	
+		
+		<div style="text-align: center">
+		<img src="images/image01.png">
+		</div>
+		<div class="box">
+			<p>このページは、ディベートでの質疑応答の内容を抜粋してまとめてあります。<br>なかなか作業時間を得ることができなかったので全ての質問に対して十分な解説ができなかったので自分なりにまとめてみました。<br>もしかしたら間違った事を記述しているかもしれません。<br>もしくは、もっと効率の良い
+				記述方法があるかもしれません。<br>参考程度に閲覧をお願いいたします。<br>m(__)m</p>
+		</div>
+		<br><br>
+		<div style="text-align: center">
+		<img src="images/rmq01.png">
+		</div>
+	</body>
+</html>
