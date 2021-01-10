@@ -8,7 +8,7 @@
 
 .photos img {
 	width: 50%;
-	animation-name: photoanimation;
+	animation-name: photoanime;
 	animation-duration: 15s;
 	animation-iteration-count: infinite;
 	opacity: 0;
