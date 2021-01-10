@@ -2,26 +2,51 @@
 /*画像を全て重ねる*/
 .photos {
 	margin: auto;
-	background-color: white;
+	background-color: #f1f1f1;
 	position: relative;
 }
 
-.photos img {
+.album img {
 	width: 50%;
+	animation-name: photoanimation;
+	animation-duration: 15s;
+	animation-iteration-count: infinite;
+	opacity: 0;
 }
 
-.photos .img1 {
+.album .img1 {
 	display: block;
 	margin: 0 auto;
 }
 
-.photos .img2 {
+.album .img2 {
+	animation-delay:5s;
 	position: absolute;
 	top: 0;
 	left: 25%;
 }
 
-.photos .img3 {
+.album .img3 {
+	animation-delay:10s;
 	position: absolute;
 	top: 0;
 	left: 25%;
+}
+
+/*keyframesの設定*/
+@keyframes photoanime {
+	0% {
+		opacity: 0;
+	}
+	
+	12.5% {
+		opacity: 1;
+	}
+
+	37.5% {
+		opacity: 1;
+	}
+	50% {
+		opacity: 0;
+		}
+		

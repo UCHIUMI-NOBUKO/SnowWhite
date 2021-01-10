@@ -263,42 +263,50 @@ body {
 				&lt;/div><br>
 				classの設定完了。
 			</p><br>
-			<p>これらの画像を同じ位置に重なるようにCSSで記述する。<br>
-				<br>
+			<p>これらの画像を同じ位置に重なるようにCSSで記述する。
 				<div align="center">
 				<div class="photos">
 				<img class="img1" src="images/mickey0.png" alt="Photo By NOKO @ TokyoDisneyLand">
 				<img class="img2" src="images/mickey1.png" alt="Photo By NOKO @ TokyoDisneyLand">
 				<img class="img3" src="images/mickey2.png"alt="Photo By NOKO @ TokyoDisneyLand">
 				</div>
-				</div>
-				
+			</div></p>
+			<p>これで3枚の写真が重なっています。<br>
+				【HTML】<br>
+				&lt;div align="center"><br>
+				&lt;div class="photos"><br>
+				&lt;img class="img1" src="images/mickey0.png" alt="Photo By NOKO @ TokyoDisneyLand"><br>
+				&lt;img class="img2" src="images/mickey1.png" alt="Photo By NOKO @ TokyoDisneyLand"><br>
+				&lt;img class="img3" src="images/mickey2.png" alt="Photo By NOKO @ TokyoDisneyLand"><br>
+				&lt;/div><br>
+				&lt;/div><br><br>
+				【CSS】<br>
+				.photos {
+				margin: auto;・・・ブラウザーが適切なマージン（余白）を選択。要素を中央揃えする時に<font color="red">auto</font>を使用。<br>
+				background-color: #f1f1f1;・・・背景色はこのBOXのスタイルに合わせました。<br>
+				position: relative;・・・「relative（相対位置）」。（ここを基準（親要素）に他の要素（子要素）が動くようになるように設定。）<br>
+				}<br><br>
+				.photos img {<br>
+				width: 50%;<br>
+				}<br><br>
+				.photos .img1 {<br>
+				display: block;・・・要素が縦に並ぶように設定。<br>
+				margin: 0 auto;・・・中央揃え。上下のマージン（余白）は０。左右のマージン（余白）はauto。<br>
+				}<br><br>
+				.photos .img2 {<br>
+				position: absolute;・・・「absolute（絶対位置）」。<br>
+				top: 0;・・・img1を基準に上からの位置は０。つまり、上が揃う。<br>
+				left: 25%;・・・position指定した画像はmarginによる中央寄せが効かないのでleftで調節。width:50%の中央寄せならleft:25%で対応。<br>
+				}<br><br>
+				.photos .img3 {<br>
+				position: absolute;・・・「absolute（絶対位置）」。<br>
+				top: 0;・・・img1を基準に上からの位置は０。つまり、上が揃う。<br>
+				left: 25%;・・・position指定した画像はmarginによる中央寄せが効かないのでleftで調節。width:50%の中央寄せならleft:25%で対応。
+			</p>
 
-				まずは、CSSアニメーションを記述。<br><br>
-				.henka {<br>
-				animation-name: image_henka;・・・・・アニメーションの名前（＠keyframesと一致した名前）。<br>
-				animation-duration: 3s;・・・・・アニメーション開始から終了までの時間はゆったりと変化させたいので<font color="red">3秒</font>。<br>
-				animation-timing-function:ease-in-out;・・・・・アニメーションの速度の緩急設定は、開始時と終了時をゆっくり変化させる<font color="red">ease-in-out</font>。<br>
-				animation-delay: 0s;・・・・・アニメーションが開始する時間は、<font color="red">0秒後</font>。(0秒だと、書かなくてもOK!)<br>
-				animation-iteration-count: infinite;・・・・・アニメーションを繰り返す回数は<font color="red">無限</font>。<br>
-				animation-fill-mode: none;・・・・・アニメーション開始前後のスタイル設定は、アニメーションで設定したスタイルを<font color="red">適応しない</font>。<br>
-				animation-play-state: running;・・・・・アニメーションを<font color="red">再生</font>。<br>
-				}<br>
-				<br>
-				@keyframes image_henka{・・・・・アニメーションの名前（animation-nameと一致した名前）。<br>
-				from{・・・・・アニメーションの開始点。<br>
-				margin-left: auto;・・・左側のマージン（余白）は自動設定。<br>
-				width: 100%;・・・・横幅は100％<br>
-				}<br>
-				50%{・・・・・アニメーション開始から50％の地点。（上記より、1秒で１回の再生設定なのでこの地点は開始0.5秒後となる。）<br>
-				margin-left:10%;・・・・・左側のマージン（余白）10％。<br>
-				width: 100%;・・・・横幅は100％<br>
-				}<br>
-				to{・・・・・アニメーションの終了点。<br>
-				margin-left:auto;左側のマージン（余白）は自動設定。<br>
-				width: 100%;・・・・横幅は100％<br>
-				}<br>
-				}<br>
+			<p>これで、画像の準備は完了。<br><br>
+				
+				
 				
 				
 				
