@@ -1,0 +1,27 @@
+@charset "utf-8";
+/*画像を全て重ねる*/
+.photos {
+	margin: auto;
+	background-color: white;
+	position: relative;
+}
+
+.photos img {
+	width: 50%;
+}
+
+.photos .img1 {
+	display: block;
+	margin: 0 auto;
+}
+
+.photos .img2 {
+	position: absolute;
+	top: 0;
+	left: 25%;
+}
+
+.photos .img3 {
+	position: absolute;
+	top: 0;
+	left: 25%;

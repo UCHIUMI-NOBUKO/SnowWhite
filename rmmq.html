@@ -148,7 +148,8 @@ body {
 			}			
 </style>
 		
-<link rel="stylesheet" href="matsumoto.css">		
+<link rel="stylesheet" href="matsumoto.css">
+<link rel="stylesheet" href="hunada.css">		
 </head>
 	
 	<body>
@@ -253,14 +254,25 @@ body {
 				<img src="images/mickey1.png" alt="Photo By NOKO @ TokyoDisneyLand">
 				<img src="images/mickey2.png"alt="Photo By NOKO @ TokyoDisneyLand">
 			</div></p>
-			<p>これらに任意のclass名をつける。<br>
+			<p>これらの画像１つ１つにclass名をつける。<br>
 				<br>
-				&lt;div class ="photos">・・・・・class名を【photos】と任意に設定。<br>
-				&lt;img src="images/mickey0.png" alt="Photo By NOKO @ TokyoDisneyLand"><br>
-				&lt;img src="images/mickey1.png" alt="Photo By NOKO @ TokyoDisneyLand"><br>
-				&lt;img src="images/mickey2.png"alt="Photo By NOKO @ TokyoDisneyLand"><br>
+				&lt;div class ="photos">・・・・・まとめてclass名【photos】と任意に設定。<br>
+				&lt;img class="img1" src="images/mickey0.png" alt="Photo By NOKO @ TokyoDisneyLand">・・・class名【img1】<br>
+				&lt;img class="img2" src="images/mickey1.png" alt="Photo By NOKO @ TokyoDisneyLand">・・・class名【img2】<br>
+				&lt;img class="img3" src="images/mickey2.png" alt="Photo By NOKO @ TokyoDisneyLand">・・・class名【img3】<br>
 				&lt;/div><br>
-			</p>
+				classの設定完了。
+			</p><br>
+			<p>これらの画像を同じ位置に重なるようにCSSで記述する。<br>
+				<br>
+				<div align="center">
+				<div class="phtos">
+				<img src="images/mickey0.png" alt="Photo By NOKO @ TokyoDisneyLand">
+				<img src="images/mickey1.png" alt="Photo By NOKO @ TokyoDisneyLand">
+				<img src="images/mickey2.png"alt="Photo By NOKO @ TokyoDisneyLand">
+				</div>
+				<div>
+				
 
 				まずは、CSSアニメーションを記述。<br><br>
 				.henka {<br>
