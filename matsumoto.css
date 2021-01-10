@@ -69,8 +69,8 @@
 /*ガクガク*/
 .grid3{
 	animation-name: move-box3;
-	animation-duration: 1s;
-	animation-timing-function:ease-in-out;
+	animation-duration: 0.5s;
+	animation-timing-function:linear;
 	animation-delay: 0s; /*3→０に変更*/
 	animation-iteration-count: infinite;　/*5→infiniteに変更*/
 	animation-fill-mode: none;
