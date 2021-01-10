@@ -1,16 +1,14 @@
 @charset "utf-8";
-
+/*松本さんの記述*/
 .grid {
 	animation-name: move-box;
 	animation-duration: 1s;
 	animation-timing-function:ease-in-out;
 	animation-delay: 3s;
-	animation-iteration-count: infinite;
+	animation-iteration-count: infinite;　/*5→infiniteに変更*/
 	animation-fill-mode: none;
 	animation-play-state: running;
-	position:absolute; left:130px
 }
-
 @keyframes move-box{
 	from{
 		margin-left: auto;
@@ -25,10 +23,120 @@
 		width: 100%;
 	}
 }
-
 	
-
-
+/*細かく左右に移動*/
+.grid1{
+	animation-name: move-box1;
+	animation-duration: 1s;
+	animation-timing-function:ease-in-out;
+	animation-delay: 3s;
+	animation-iteration-count: infinite;　/*5→infiniteに変更*/
+	animation-fill-mode: none;
+	animation-play-state: running;
+}
+@keyframes move-box1{
+	from{
+		margin-left: auto;
+		width: 100%;
+	}
+	10%{
+		margin-left:2px;
+		width: 100%;
+	}
+	20%{
+		margin-left: auto;
+		width: 100%;
+	}
+	30%{
+		margin-left:2px;
+		width: 100%;
+	}
+	40%{
+		margin-left: auto;
+		width: 100%;
+	}
+	50%{
+		margin-left:2px;
+		width: 100%;
+	}
+	60%{
+		margin-left: auto;
+		width: 100%;
+	}
+	70%{
+		margin-left:2px;
+		width: 100%;
+	}
+	80%{
+		margin-left: auto;
+		width: 100%;
+	}
+	90%{
+		margin-left:2px;
+		width: 100%;
+	}
+	to{
+		margin-left:outo;
+		width: 100%;
+	}
+}
+	
+/*細かく上下に移動*/
+.grid2{
+	animation-name: move-box2;
+	animation-duration: 1s;
+	animation-timing-function:ease-in-out;
+	animation-delay: 3s;
+	animation-iteration-count: infinite;　/*5→infiniteに変更*/
+	animation-fill-mode: none;
+	animation-play-state: running;
+}
+@keyframes move-box2{
+	from{
+		margin-top: auto;
+		width: 100%;
+	}
+	10%{
+		margin-top:2px;
+		width: 100%;
+	}
+	20%{
+		margin-top: auto;
+		width: 100%;
+	}
+	30%{
+		margin-top:2px;
+		width: 100%;
+	}
+	40%{
+		margin-top: auto;
+		width: 100%;
+	}
+	50%{
+		margin-top:2px;
+		width: 100%;
+	}
+	60%{
+		margin-top: auto;
+		width: 100%;
+	}
+	70%{
+		margin-top:2px;
+		width: 100%;
+	}
+	80%{
+		margin-top: auto;
+		width: 100%;
+	}
+	90%{
+		margin-top:2px;
+		width: 100%;
+	}
+	to{
+		margin-top:outo;
+		width: 100%;
+	}
+}
 
 
 
