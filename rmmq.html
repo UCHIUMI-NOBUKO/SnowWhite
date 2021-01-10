@@ -262,32 +262,16 @@ body {
 				&lt;img class="img3" src="images/mickey2.png" alt="Photo By NOKO @ TokyoDisneyLand">・・・class名【img3】<br>
 				&lt;/div><br>
 				classの設定完了。
-			</p><br>
-			<p>これらの画像を同じ位置に重なるようにCSSで記述する。
-				<div align="center">
-				<div class="photos">
-				<img class="img1" src="images/mickey0.png" alt="Photo By NOKO @ TokyoDisneyLand">
-				<img class="img2" src="images/mickey1.png" alt="Photo By NOKO @ TokyoDisneyLand">
-				<img class="img3" src="images/mickey2.png"alt="Photo By NOKO @ TokyoDisneyLand">
-				</div>
-			</div></p>
-			<p>これで3枚の写真が重なっています。<br>
-				【HTML】<br>
-				&lt;div align="center"><br>
-				&lt;div class="photos"><br>
-				&lt;img class="img1" src="images/mickey0.png" alt="Photo By NOKO @ TokyoDisneyLand"><br>
-				&lt;img class="img2" src="images/mickey1.png" alt="Photo By NOKO @ TokyoDisneyLand"><br>
-				&lt;img class="img3" src="images/mickey2.png" alt="Photo By NOKO @ TokyoDisneyLand"><br>
-				&lt;/div><br>
-				&lt;/div><br><br>
-				【CSS】<br>
+			</p>
+			<p>これらの画像を同じ位置に重なるようにCSSで記述する。</p>
+			<p>	【CSS】<br>
 				.photos {
 				margin: auto;・・・ブラウザーが適切なマージン（余白）を選択。要素を中央揃えする時に<font color="red">auto</font>を使用。<br>
 				background-color: #f1f1f1;・・・背景色はこのBOXのスタイルに合わせました。<br>
 				position: relative;・・・「relative（相対位置）」。（ここを基準（親要素）に他の要素（子要素）が動くようになるように設定。）<br>
 				}<br><br>
 				.photos img {<br>
-				width: 50%;<br>
+				width: 50%;・・・横幅は50％。<br>
 				}<br><br>
 				.photos .img1 {<br>
 				display: block;・・・要素が縦に並ぶように設定。<br>
@@ -301,10 +285,63 @@ body {
 				.photos .img3 {<br>
 				position: absolute;・・・「absolute（絶対位置）」。<br>
 				top: 0;・・・img1を基準に上からの位置は０。つまり、上が揃う。<br>
-				left: 25%;・・・position指定した画像はmarginによる中央寄せが効かないのでleftで調節。width:50%の中央寄せならleft:25%で対応。
-			</p>
-
-			<p>これで、画像の準備は完了。<br><br>
+			left: 25%;・・・position指定した画像はmarginによる中央寄せが効かないのでleftで調節。width:50%の中央寄せならleft:25%で対応。<br>これで、画像の準備は完了。</p>
+			
+			<p>残すは・・・keyframesとアニメーションの設定。<br>
+				上右記の画像を重ねるCSSに追加記載していきます。<br>
+				【CSS】<br>
+				<font color="#cccccc">.photos {
+				margin: auto;・・・ブラウザーが適切なマージン（余白）を選択。要素を中央揃えする時にautoを使用。<br>
+				background-color: #f1f1f1;・・・背景色はこのBOXのスタイルに合わせました。<br>
+				position: relative;・・・「relative（相対位置）」。（ここを基準（親要素）に他の要素（子要素）が動くようになるように設定。）<br>
+				}<br><br>
+				.photos img {<br>
+				width: 50%;・・・横幅は50％。<br></font>
+				animation-name: photoanime;・・・アニメーションの名前（＠keyframesと一致した名前）。<br>
+				animation-duration: 15s;・・・アニメーション開始から終了までの時間は<font color="red">15秒</font>。<br>
+				opacity: 0;・・・不透明度を<font color="red">0</font>とし完全に透明な（画面に表示されない）状態。<font color="#cccccc"><br>
+				}<br><br>
+				.photos .img1 {<br>
+				display: block;・・・要素が縦に並ぶように設定。<br>
+				margin: 0 auto;・・・中央揃え。上下のマージン（余白）は０。左右のマージン（余白）はauto。<br>
+				}<br><br>
+				.photos .img2 {<br></font>
+				animation-delay:5s;・・・アニメーションが開始する時間は、<font color="red">5秒後</font>。<br><font color="#cccccc">
+				position: absolute;・・・「absolute（絶対位置）」。<br>
+				top: 0;・・・img1を基準に上からの位置は０。つまり、上が揃う。<br>
+				left: 25%;・・・position指定した画像はmarginによる中央寄せが効かないのでleftで調節。width:50%の中央寄せならleft:25%で対応。<br>
+				}<br><br>
+				.photos .img3 {<br></font>
+				animation-delay:10s;・・・アニメーションが開始する時間は、<font color="red">10秒後</font>。<br><font color="#cccccc">
+				position: absolute;・・・「absolute（絶対位置）」。<br>
+				top: 0;・・・img1を基準に上からの位置は０。つまり、上が揃う。<br>
+				left: 25%;・・・position指定した画像はmarginによる中央寄せが効かないのでleftで調節。width:50%の中央寄せならleft:25%で対応。</font><br><br>
+				@keyframes photoanime {・・・アニメーションの名前（animation-nameと一致した名前）。<br>
+	0% {・・・アニメーションの開始点。<br>
+				opacity: 0;・・・不透明度を<font color="red">0</font>とし完全に透明な（画面に表示されない）状態。<br>
+				}<br>
+				<br>
+	12.5% {・・・アニメーションの開始から12.5％。<br>
+				opacity: 1;・・・不透明度を<font color="red">1</font>とし完全に不透明な（画面に表示される）状態。<br>
+				}<br>
+				<br>
+				37.5% {・・・アニメーションの開始から37.5％。<br>
+		opacity: 1;・・・不透明度を<font color="red">1</font>とし完全に不透明な（画面に表示される）状態。12.5%からここまでは写真が表示される。<br>
+				}<br>
+				<br>
+	50% {・・・アニメーションの開始から50％。
+		opacity: 0;・・・不透明度を<font color="red">0</font>とし完全に透明な（画面に表示されない）状態。<br>
+				}<br>
+				<br>
+				追記により、アニメーションが適応される。<br>
+			実際のアニメーションは↓↓↓こちら↓↓↓<br></p?>
+				<div align="center">
+				<div class="photos">
+				<img class="img1" src="images/mickey0.png" alt="Photo By NOKO @ TokyoDisneyLand">
+				<img class="img2" src="images/mickey1.png" alt="Photo By NOKO @ TokyoDisneyLand">
+				<img class="img3" src="images/mickey2.png"alt="Photo By NOKO @ TokyoDisneyLand">
+				</div>
+			</div>
 				
 				
 				
