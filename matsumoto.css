@@ -66,10 +66,10 @@
   100% { transform:translateY(0) }
 }
 
-/*シーソー　ゆっくり*/
+/*ガクガク*/
 .grid3{
 	animation-name: move-box3;
-	animation-duration: 3s;
+	animation-duration: 1s;
 	animation-timing-function:ease-in-out;
 	animation-delay: 0s; /*3→０に変更*/
 	animation-iteration-count: infinite;　/*5→infiniteに変更*/
