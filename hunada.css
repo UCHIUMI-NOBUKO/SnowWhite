@@ -6,7 +6,7 @@
 	position: relative;
 }
 
-.album img {
+.photos img {
 	width: 50%;
 	animation-name: photoanimation;
 	animation-duration: 15s;
@@ -14,19 +14,19 @@
 	opacity: 0;
 }
 
-.album .img1 {
+.photos .img1 {
 	display: block;
 	margin: 0 auto;
 }
 
-.album .img2 {
+.photos .img2 {
 	animation-delay:5s;
 	position: absolute;
 	top: 0;
 	left: 25%;
 }
 
-.album .img3 {
+.photos .img3 {
 	animation-delay:10s;
 	position: absolute;
 	top: 0;
