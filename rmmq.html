@@ -246,14 +246,22 @@ body {
 			<div class="box-qestion">画像から画像への移行</div>
 			<p>画像A→画像B→画像C のように画像を変化させるアニメーション。<br>
 				それぞれの画像を重ねて表示させておき、再生タイミングをずらすことであたかも１連の流れのように表示させる。<br>
-				つまりは、１つの画像につき１つのアニメーションの設定がなされていて、それぞれタイミングをずらして流れを作る。<br>
-				<br>
-				まずは画像を３つ準備してみた。
+			つまりは、１つの画像につき１つのアニメーションの設定がなされていて、それぞれタイミングをずらして流れを作る。</p>
+			<p>今回は画像を３つ準備してみた。（コロナのおかげで全然Disney行けてない・・・。）
 				<div align="center">
-				<img src="images/mickey0.png">
-				<img src="images/mickey1.png">
-				<img src="images/mickey1.png">
-				</div>
+				<img src="images/mickey0.png" alt="Photo By NOKO @ TokyoDisneyLand">
+				<img src="images/mickey1.png" alt="Photo By NOKO @ TokyoDisneyLand">
+				<img src="images/mickey2.png"alt="Photo By NOKO @ TokyoDisneyLand">
+			</div></p>
+			<p>これらに任意のclass名をつける。<br>
+				<br>
+				&lt;div class ="photos">・・・・・class名を【photos】と任意に設定。<br>
+				&lt;img src="images/mickey0.png" alt="Photo By NOKO @ TokyoDisneyLand"><br>
+				&lt;img src="images/mickey1.png" alt="Photo By NOKO @ TokyoDisneyLand"><br>
+				&lt;img src="images/mickey2.png"alt="Photo By NOKO @ TokyoDisneyLand"><br>
+				&lt;/div><br>
+			</p>
+
 				まずは、CSSアニメーションを記述。<br><br>
 				.henka {<br>
 				animation-name: image_henka;・・・・・アニメーションの名前（＠keyframesと一致した名前）。<br>
