@@ -169,7 +169,6 @@ body {
 		<div class="box">
 			<p>このページは、ディベートでの質疑応答の内容を抜粋してまとめてあります。<br>なかなか作業時間をとることができなかったので全ての質問に対して十分な解説ができなかったので自分なりにまとめてみました。<br>もしかしたら間違った事を記述しているかもしれません。<br>もしくは、もっと効率の良い記述方法があるかもしれません。<br>参考程度に閲覧をお願いいたします。<br>m(__)m</p>
 		</div>
-		<br><br>
 		<div style="text-align: center">
 		<img src="images/rmmq01.png">
 		</div>
@@ -233,12 +232,56 @@ body {
 						ガクガクについては。どうにもなりませんでした。<br>
 						なんとか揺れるようにはなったのですが、animation-duration: 1s;だと動きが緩慢。<br>
 						keyframesで細かく設定をすればするほど動きが崩れて・・・。<br>
-						さて困った・・・・・！？そもそも、animation-durationを短くすれば動きが速くなるのでは！？<br>
+						さて困った・・・・・。<br>
+						あれやこれやと弄っているうちに、ふと、「そもそもanimation-durationを短くすれば動きが速くなるのでは！？」という結論が。<br>
 						animation-duration: 1ms; にすることでやっと解決しました。<br>
 						<br>
 						とにかく時間のかかる作業となってしまいました。<br>
 						けど、作っている間はとても楽しかった。<br>
 					</p>
 		</div>
+		<br><br>
+		<div class="Questionbox">
+			<div class="box-title">船田さんからの質問</div>
+			<div class="box-qestion">画像から画像への移行</div>
+			<p>画像A→画像B→画像C のように画像を変化させるアニメーション。<br>
+				それぞれの画像を重ねて表示させておき、再生タイミングをずらすことであたかも１連の流れのように表示させる。<br>
+				つまりは、１つの画像につき１つのアニメーションの設定がなされていて、それぞれタイミングをずらして流れを作る。<br>
+				<br>
+				まずは画像を３つ準備してみた。
+				<div align="center">
+				<img src="images/mickey0.png">
+				<img src="images/mickey1.png">
+				<img src="images/mickey1.png">
+				</div>
+				まずは、CSSアニメーションを記述。<br><br>
+				.henka {<br>
+				animation-name: image_henka;・・・・・アニメーションの名前（＠keyframesと一致した名前）。<br>
+				animation-duration: 3s;・・・・・アニメーション開始から終了までの時間はゆったりと変化させたいので<font color="red">3秒</font>。<br>
+				animation-timing-function:ease-in-out;・・・・・アニメーションの速度の緩急設定は、開始時と終了時をゆっくり変化させる<font color="red">ease-in-out</font>。<br>
+				animation-delay: 0s;・・・・・アニメーションが開始する時間は、<font color="red">0秒後</font>。(0秒だと、書かなくてもOK!)<br>
+				animation-iteration-count: infinite;・・・・・アニメーションを繰り返す回数は<font color="red">無限</font>。<br>
+				animation-fill-mode: none;・・・・・アニメーション開始前後のスタイル設定は、アニメーションで設定したスタイルを<font color="red">適応しない</font>。<br>
+				animation-play-state: running;・・・・・アニメーションを<font color="red">再生</font>。<br>
+				}<br>
+				<br>
+				@keyframes image_henka{・・・・・アニメーションの名前（animation-nameと一致した名前）。<br>
+				from{・・・・・アニメーションの開始点。<br>
+				margin-left: auto;・・・左側のマージン（余白）は自動設定。<br>
+				width: 100%;・・・・横幅は100％<br>
+				}<br>
+				50%{・・・・・アニメーション開始から50％の地点。（上記より、1秒で１回の再生設定なのでこの地点は開始0.5秒後となる。）<br>
+				margin-left:10%;・・・・・左側のマージン（余白）10％。<br>
+				width: 100%;・・・・横幅は100％<br>
+				}<br>
+				to{・・・・・アニメーションの終了点。<br>
+				margin-left:auto;左側のマージン（余白）は自動設定。<br>
+				width: 100%;・・・・横幅は100％<br>
+				}<br>
+				}<br>
+				
+				
+				
+			
 	</body>
 </html>
