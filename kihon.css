@@ -1,0 +1,36 @@
+@charset "utf-8";
+/*ページの基本設定*/
+* {
+  margin:0; padding:0;
+}
+			
+header {
+  width: 100%;
+  padding: 15px 0;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #332f2e;
+  color: #FFFFFF;
+}
+header .headline{
+  font-size: 32px;
+}
+.nav-list {
+  text-align: center;
+  padding: 5px 0;
+  margin: 0 auto;
+}
+.nav-list-item {
+  list-style: none;
+  display: inline-block;
+  margin: 0 5px;
+}
+			
+body {
+	background-color:#2e3233;
+	color:#c2c4cc;
+	font-family:"Hiragino maru Gothic ProN W4", "Hiragino Kaku Gothic Pro","Hiragino Sans", "arial", "Meiryo", "MS PGothic", sans-serif!important;
+			}
+p {
+	text-align:center;
+			}本設定*/
