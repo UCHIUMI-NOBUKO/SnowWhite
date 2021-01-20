@@ -10,14 +10,14 @@
   5vw   -100px 2px #ffe5ff,
   10vw  -400px 3px #ffe5ff,
   20vw  -500px 4px,
-  30vw  -580px 5px#d1e8ff,
-  39vw  -250px 2px,#ffe5ff
+  30vw  -580px 5px #d1e8ff,
+  39vw  -250px 2px #ffe5ff,
   42vw  -340px 5px,
-  56vw  -150px 2px#ffffc6,
+  56vw  -150px 2px #ffffc6,
   63vw  -180px 10px #ffe5ff,
-  78vw  -220px 4px#d1e8ff,
+  78vw  -220px 4px #d1e8ff,
   86vw  -320px 9px,
-  94vw  -170px 7px　#ffe5ff;
+  94vw  -170px 7px #ffe5ff;
   animation: anim 8s linear infinite;
 }
 
